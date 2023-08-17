@@ -1,5 +1,6 @@
 import Link from "next/link"
 import SearchBar from "./search-bar"
+import Cards from "./Cards"
 
 export default function Home() {
   return (
@@ -26,6 +27,10 @@ export default function Home() {
           <SearchBar />
         </div>
       </header>
+
+      <div>
+        <Cards />
+      </div>
     </>
   )
 }
