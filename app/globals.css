@@ -78,16 +78,19 @@ $color-primary-white: rgb(240, 240, 240);
 */
 
 .main {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   padding: 50px;
   font-family: 'Roboto', sans-serif;
 }
 
 .card {
-  width: 15rem;
+  margin: 1.5rem 1.5rem;
+  width: 16rem;
   height: 22.5rem;
   border-radius: 10px;
   overflow: hidden;
