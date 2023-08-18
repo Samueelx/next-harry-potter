@@ -9,7 +9,9 @@ type Character = {
 }
 
 async function getData() {
-  const res = await fetch('https://hp-api.onrender.com/api/characters');
+  const res = await fetch('https://hp-api.onrender.com/api/characters', {
+    cache: 'no-store'
+  });
   const data: Character[] = await res.json();
   return data;
 }
@@ -18,7 +20,9 @@ async function getOneCharacter() {
   const characters: Character[] = await getData();
   let id = characters[0].id
   /**Fetch the character */
-  const res = await fetch(`https://hp-api.onrender.com/api/character/${id}`)
+  const res = await fetch(`https://hp-api.onrender.com/api/character/${id}`, {
+    cache: 'no-store'
+  })
   const data: Character = await res.json();
   return data;
 }
@@ -46,7 +50,7 @@ export default async function Cards() {
             <p className="chardob">
               {char.dateOfBirth}
             </p>
-            <a href="#" className="button">
+            <a href={`details/${char.id}`} className="button">
               Find out more
             </a>
           </div>

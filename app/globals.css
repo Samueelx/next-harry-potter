@@ -86,6 +86,7 @@ $color-primary-white: rgb(240, 240, 240);
   flex-wrap: wrap;
   padding: 50px;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .card {
