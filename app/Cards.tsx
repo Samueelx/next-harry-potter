@@ -16,18 +16,6 @@ async function getData() {
   return data;
 }
 
-async function getOneCharacter() {
-  const characters: Character[] = await getData();
-  let id = characters[0].id
-  /**Fetch the character */
-  const res = await fetch(`https://hp-api.onrender.com/api/character/${id}`, {
-    cache: 'no-store'
-  })
-  const data: Character = await res.json();
-  return data;
-}
-
-
 
 export default async function Cards() {
   const data = await getData();
