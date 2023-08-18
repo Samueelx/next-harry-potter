@@ -69,7 +69,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                     <Link href="#" type="button" className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">{character.alive ? 'Alive' : 'Dead'}</Link>
                 </div>
                 <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
-                {character.name}, a {character.ancestry} wizard born in {character.yearOfBirth}, hails from an esteemed family. His wand, made of {character.wand.wood} and {character.wand.core}, reflects his determined nature. This complex character is portrayed by actor {character.actor}.
+                {character.name}, a {character.ancestry} {character.wizard ? 'wizard' : 'human(not a wizard)'} born in {character.yearOfBirth}, hails from an esteemed family. His wand, made of {character.wand.wood} and {character.wand.core}, reflects his determined nature. This complex character is portrayed by actor {character.actor}.
                 </p>
             </div>
         </main>

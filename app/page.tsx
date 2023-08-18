@@ -29,7 +29,9 @@ export default function Home() {
       </header>
 
       <div>
+        <div className="mb-8">
         <Cards />
+        </div>
       </div>
     </>
   )

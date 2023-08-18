@@ -19,7 +19,7 @@ async function getData() {
 
 export default async function Cards() {
   const data = await getData();
-  const chars = data.slice(0, 15);
+  const chars = data.slice(0, 21);
 
   return (
     <div>
