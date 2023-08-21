@@ -2,13 +2,6 @@
 import { useState } from "react";
 
 export default function SearchBar() {
-    // const [query, setQuery] = useState('');
-    // async function handleSubmit(e: React.SyntheticEvent){
-    //     e.preventDefault();
-
-    //     const resp = await fetch(`/api/characters/search?query=${query}`)
-    //     const characters = await resp.json();
-    // }
     return (
         <div>
             <form role="search">
