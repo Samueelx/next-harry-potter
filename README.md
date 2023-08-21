@@ -33,7 +33,7 @@ Visit [the live link](https://next-harry-potter.vercel.app/).
 - Git
 
 ## To do
-- [] Add Search FUnctionality
+- [ ] Add Search Functionality
 
 ## License
 
