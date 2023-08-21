@@ -1,3 +1,4 @@
+'use client';
 import Link from "next/link"
 import SearchBar from "./search-bar"
 import Cards from "./Cards"
@@ -24,7 +25,7 @@ export default function Home() {
           </ul>
         </nav>
         <div>
-          <SearchBar />
+          <SearchBar/>
         </div>
       </header>
 
