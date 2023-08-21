@@ -6,8 +6,8 @@ import Cards from "./Cards"
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between items-center mb-4">
-        <h2 className='text-2xl italic font-bold tracking-widest'>Harry Potter</h2>
+      <header className="flex justify-between items-center mb-4 flex-wrap">
+        <h2 className='text-xl italic font-bold tracking-widest flex-1'>Harry Potter</h2>
         <nav className="flex-1">
           <ul className="flex justify-center">
             <li className="float-left">
@@ -24,7 +24,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="w-full flex-1 my-4">
           <SearchBar/>
         </div>
       </header>
