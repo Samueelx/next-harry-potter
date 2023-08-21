@@ -35,6 +35,9 @@ Visit [the live link](https://next-harry-potter.vercel.app/).
 ## To do
 - [ ] Add Search Functionality
 
+## Known Bugs
+- The API used does not have the images of some of the characters (such as Cassius Warrington and Fleur Delacour), that is why I decided to display the details of only the first 21 characters.
+
 ## License
 
  [MIT](https://github.com/Samueelx/poetry-hub/blob/master/LICENCE)
