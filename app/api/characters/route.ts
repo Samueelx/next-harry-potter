@@ -11,7 +11,7 @@ async function fetchCharacters() {
 
 }
 
-export async function GET(request) {
+export async function GET(request: any) {
     const coins = await fetchCharacters();
     return NextResponse.json(coins);
 }

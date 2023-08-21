@@ -33,14 +33,14 @@ async function fetchCharacters() {
 
 }
 
-export async function GET(request) {
+export async function GET(request: any) {
     const characters: Character[] = await fetchCharacters();
     const { searchParams } = new URL(request.url);
     console.log(searchParams.get('query'))
-    const query  = searchParams.get('query');
+    const query: string | null  = searchParams.get('query');
 
     const filteredCharacters = characters.filter((character) => {
-        return character.name.toLowerCase().includes(query.toLowerCase())
+        return character.name.toLowerCase().includes(query!.toLowerCase())
     });
     console.log("Done!!")
 
